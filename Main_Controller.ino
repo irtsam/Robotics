@@ -1,19 +1,10 @@
 /*
  SMS receiver
- 
- This sketch, for the Arduino GSM shield, waits for a SMS message 
- and displays it through the Serial port. 
- 
- Circuit:
- * GSM shield attached to and Arduino
- * SIM card that can receive SMS messages
- 
- created 25 Feb 2012
- by Javier Zorzano / TD
- 
- This example is in the public domain.
- 
- http://arduino.cc/en/Tutorial/GSMExamplesReceiveSMS
+ The below code uses a GSM shield, SIM card, and an Arduino microcontroller
+ It receives a message from user which contains lat and longitude as well as from robots
+ also via text messages which too contain lat and long of robots. It then uses thes to 
+ calculate distance between user and robots using the HaverSine formulae and depending on 
+ whether the robot is vacant or not send a confirmation or rejection message to user.
  
 */
 
